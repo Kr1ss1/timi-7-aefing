@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Æfing 3</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Javascript 101</h1>
+
+    <!-- Nafn -->
+    <div class="card">
+      <h2>Stimplaðu inn nafnið þitt:</h2>
+      <input id="nameInput" type="text" placeholder="Nafnið þitt hér..." />
+      <button onclick="sayHello()">Birta halló + nafn!</button>
+      <div class="output" id="nameOutput">Niðurstaða birtist hér...</div>
+    </div>
+
+    <!-- Aldur -->
+    <div class="card">
+      <h2>Stimplaðu inn aldurinn þinn:</h2>
+      <input id="ageInput" type="number" placeholder="Aldurinn þinn hér..." />
+      <button onclick="checkAge()">Birta hvort fullorðinn eða barn</button>
+      <div class="output" id="ageOutput">Niðurstaða birtist hér...</div>
+    </div>
+
+    <!-- Reiknivél -->
+    <div class="card">
+      <h2>Reiknivél</h2>
+      <input id="num1" type="number" placeholder="Tala 1..." />
+
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+
+      <input id="num2" type="number" placeholder="Tala 2..." />
+      <button onclick="calculate()">Reikna</button>
+
+      <div class="output" id="calcOutput">Niðurstaða birtist hér...</div>
+    </div>
+
+    <!-- ÆFING 3.2: Hrós -->
+    <div class="card">
+      <h2>Hrós dagsins</h2>
+      <p>Smelltu á takkann og fáðu hrós!</p>
+      <button onclick="giveCompliment()">Fá hrós!</button>
+      <div class="output" id="complimentOutput">Hrós birtist hér...</div>
+    </div>
+
+    <!-- ÆFING 3.3: Stig -->
+    <div class="card">
+      <h2>Hvernig gekk prófið?</h2>
+      <p>Sláðu inn Einkunn sem þú fékkst (0–100):</p>
+
+      <input
+        id="scoreInput"
+        type="number"
+        min="0"
+        max="100"
+        placeholder="Einkunn þín..."
+      />
+
+      <button onclick="checkScore()">Athuga einkunn</button>
+
+      <div class="output" id="scoreOutput">Niðurstaða birtist hér...</div>
+    </div>
+  </body>
+</html>
